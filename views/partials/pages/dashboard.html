@@ -1,0 +1,37 @@
+<div id="dashboard">
+	<ul class="nav nav-tabs">
+	 <li class="nav-item">
+	   <a class="nav-link active" ng-click="homeToggle()" data-toggle="tab" href="">Home</a>
+	 </li>
+	 <li class="nav-item">
+	   <a class="nav-link" ng-click="profileToggle()" data-toggle="tab" href="">Profile</a>
+	 </li>
+	 <li class="nav-item">
+	   <a class="nav-link " ng-click="anotherToggle()" data-toggle="tab" href="">Another</a>
+	 </li>
+	</ul>
+
+	<div id="myTabContent" class="tab-content">
+	 
+		<div ng-class="'tab-pane fade show ' + home" id="home">
+			<app-table ng-if="home"></app-table>				
+		</div>	
+		
+		<div ng-class="'tab-pane fade show ' + profile" id="profile">
+			<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+		</div>
+
+		<div ng-class="'tab-pane fade show ' + another" id="home">
+			<app-table ng-if="another"></app-table>				
+		</div>
+
+	</div>
+
+</div>
+
+<style type="text/css">
+	#dashboard {
+		width: 100%;
+	}
+
+</style>

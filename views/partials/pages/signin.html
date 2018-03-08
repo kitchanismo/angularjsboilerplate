@@ -1,0 +1,49 @@
+<div id="signin">
+	<div class="row">
+		<div class="col-6">
+			<div ng-class="'card border-' + appTheme + ' mb-3'" style="max-width: 100%;">
+			  <div class="card-header">Sign in</div>
+			  <div class="card-body">
+			  	<form>
+					<div class="form-group">
+				      <input 
+				      type="text"
+				      class="form-control" 
+				      placeholder="Username"
+				      ng-model="username">
+				      <input
+				      type="password" 
+				      class="form-control" 
+				      placeholder="Password">
+				      <button type="button" ng-class="'btn btn-' + appTheme">Sign in</button>
+				    </div>
+				</form>
+			  </div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div ng-class="'card text-white bg-' + appTheme + ' mb-3'" style="max-width: 100%;">
+			  <div class="card-header">Header</div>
+			  <div class="card-body">
+			    <h4 class="card-title">Primary card title</h4>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+
+	.btn {
+		margin-top: 10px;
+	}
+
+	.form-control {
+		margin-top: 10px;
+	}
+
+	.card {
+		margin-top: 20px;
+	}
+</style>
